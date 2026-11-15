@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azure Andaman | Bespoke Andaman & Nicobar Island Tour Packages</title>
+  <meta name="description" content="Discover handcrafted Andaman tour packages. Explore Havelock, Neil Island, Port Blair with premium catamarans, luxury beach resorts, scuba diving & customized private itineraries.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            ocean: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              200: '#99f6e4',
+              300: '#5eead4',
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+            },
+            abyss: {
+              800: '#0B1E2D',
+              900: '#06121C',
+              950: '#030A10'
+            },
+            coral: {
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48'
+            },
+            lagoon: '#00D2B4',
+            sand: '#F7F5F0',
+            sunburst: '#F59E0B'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-sand text-slate-800 font-sans antialiased overflow-x-hidden selection:bg-teal-500 selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT / UTILITY BAR -->
+  <div class="bg-abyss-900 text-slate-300 text-xs py-2 px-4 border-b border-white/10 hidden md:block">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-6">
+        <span class="flex items-center gap-1.5 text-teal-400 font-medium">
+          <i data-lucide="shield-check" class="w-4 h-4"></i> Govt. Authorized Island Tour Specialist
+        </span>
+        <span class="flex items-center gap-1 text-slate-400">
+          <i data-lucide="award" class="w-3.5 h-3.5 text-amber-400"></i> 4.9/5 Rated on Google (2,400+ Island Travelers)
+        </span>
+        <span class="text-slate-400">
+          <i data-lucide="ferry" class="w-3.5 h-3.5 inline text-teal-300"></i> Nautika & Makruzz Official Partner
+        </span>
+      </div>
+      <div class="flex items-center space-x-5 text-slate-300">
+        <a href="tel:+919876543210" class="hover:text-teal-300 transition flex items-center gap-1 font-semibold">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-teal-400"></i> +91 98765 43210 (24x7 Helpline)
+        </a>
+        <span class="text-slate-600">|</span>
+        <div class="flex items-center gap-2">
+          <label for="currency-select" class="text-slate-400">Currency:</label>
+          <select id="currency-select" class="bg-abyss-800 text-white rounded px-2 py-0.5 border border-white/20 text-xs focus:outline-none focus:border-teal-400 cursor-pointer">
+            <option value="INR" selected>INR (₹)</option>
+            <option value="USD">USD ($)</option>
+            <option value="EUR">EUR (€)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header id="main-header" class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-teal-700 via-teal-500 to-lagoon flex items-center justify-center text-white shadow-md shadow-teal-500/20 group-hover:scale-105 transition-transform duration-300">
+          <i data-lucide="palmtree" class="w-6 h-6"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-2xl font-bold tracking-tight text-abyss-900 group-hover:text-teal-700 transition">
+            Azure<span class="text-teal-600 font-sans font-extrabold text-xl ml-1">ANDAMAN</span>
+          </span>
+          <span class="text-[10px] tracking-widest text-slate-500 uppercase font-semibold">Bespoke Island Holidays</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+        <a href="#packages" class="hover:text-teal-600 transition flex items-center gap-1 py-1">
+          Tour Packages <span class="bg-teal-100 text-teal-800 text-[10px] px-1.5 py-0.5 rounded-full font-bold">2026 Specials</span>
+        </a>
+        <a href="#island-guide" class="hover:text-teal-600 transition">Islands Guide</a>
+        <a href="#calculator" class="hover:text-teal-600 transition flex items-center gap-1">
+          Cost Calculator
+        </a>
+        <a href="#activities" class="hover:text-teal-600 transition">Activities</a>
+        <a href="#why-us" class="hover:text-teal-600 transition">Why Azure</a>
+        <a href="#faq" class="hover:text-teal-600 transition">Travel FAQs</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center space-x-4">
+        <a href="#custom-quote" class="text-sm font-semibold text-slate-700 hover:text-teal-600 transition hidden md:block">
+          Need Help?
+        </a>
+        <button onclick="openCustomQuoteModal()" class="relative inline-flex items-center justify-center px-5 py-2.5 text-sm font-bold text-white transition-all bg-gradient-to-r from-teal-600 to-teal-500 rounded-xl shadow-md shadow-teal-600/25 hover:from-teal-700 hover:to-teal-600 hover:shadow-lg hover:shadow-teal-600/35 hover:-translate-y-0.5 active:translate-y-0">
+          <i data-lucide="sparkles" class="w-4 h-4 mr-2 text-teal-200"></i> Plan My Trip
+        </button>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-white border-b border-slate-200 px-6 py-6 space-y-4">
+      <a href="#packages" class="block text-base font-semibold text-slate-800 hover:text-teal-600" onclick="toggleMobileMenu()">Tour Packages</a>
+      <a href="#island-guide" class="block text-base font-semibold text-slate-800 hover:text-teal-600" onclick="toggleMobileMenu()">Islands Guide</a>
+      <a href="#calculator" class="block text-base font-semibold text-slate-800 hover:text-teal-600" onclick="toggleMobileMenu()">Trip Cost Calculator</a>
+      <a href="#activities" class="block text-base font-semibold text-slate-800 hover:text-teal-600" onclick="toggleMobileMenu()">Water Sports & Scuba</a>
+      <a href="#why-us" class="block text-base font-semibold text-slate-800 hover:text-teal-600" onclick="toggleMobileMenu()">Why Choose Us</a>
+      <a href="#faq" class="block text-base font-semibold text-slate-800 hover:text-teal-600" onclick="toggleMobileMenu()">FAQs</a>
+      <div class="pt-4 border-t border-slate-100 flex flex-col gap-3">
+        <a href="tel:+919876543210" class="flex items-center justify-center gap-2 py-2.5 rounded-xl border border-slate-300 font-semibold text-slate-700">
+          <i data-lucide="phone" class="w-4 h-4 text-teal-600"></i> Call Island Expert
+        </a>
+        <button onclick="openCustomQuoteModal(); toggleMobileMenu();" class="w-full py-3 bg-teal-600 text-white rounded-xl font-bold shadow-md shadow-teal-600/30">
+          Request Custom Itinerary
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center bg-abyss-950 overflow-hidden">
+    <!-- Background Image with Gradient Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?q=80&w=2000&auto=format&fit=crop" 
+        alt="Radhanagar Beach Havelock Andaman" 
+        class="w-full h-full object-cover object-center filter brightness-[0.62] scale-105 animate-subtle-zoom"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-abyss-950 via-abyss-950/40 to-transparent"></div>
+      <div class="absolute inset-0 bg-radial-gradient"></div>
+    </div>
+
+    <!-- Floating Atmosphere Elements -->
+    <div class="absolute top-16 left-10 w-72 h-72 bg-teal-500/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      
+      <!-- Premium Tag -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-teal-300 text-xs sm:text-sm font-semibold tracking-wide mb-6">
+        <span class="w-2 h-2 rounded-full bg-teal-400 animate-ping"></span>
+        Andaman Island Holidays & Honeymoon Packages 2026
+      </div>
+
+      <!-- Headline -->
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.15] max-w-4xl mx-auto">
+        Step Into <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-lagoon to-amber-200">Turquoise Horizons</span> & Untouched Isles
+      </h1>
+
+      <p class="mt-6 text-base sm:text-lg md:text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
+        Experience Radhanagar’s white sands, Havelock’s vibrant coral reefs, and Neil’s serene waters with private luxury transfers, handpicked beach resorts, and seamless catamaran sailings.
+      </p>
+
+      <!-- Trust Badges Under Hero Text -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-slate-300 font-medium">
+        <div class="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-3.5 py-1.5 rounded-lg border border-white/10">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-400"></i> No Hidden Ferry Charges
+        </div>
+        <div class="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-3.5 py-1.5 rounded-lg border border-white/10">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-400"></i> 100% Customized Itineraries
+        </div>
+        <div class="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-3.5 py-1.5 rounded-lg border border-white/10">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-400"></i> Dedicated On-Island Concierge
+        </div>
+      </div>
+
+      <!-- INTERACTIVE SEARCH / FILTER BAR (Refined Design) -->
+      <div class="mt-10 bg-white/95 backdrop-blur-xl rounded-3xl p-4 sm:p-6 shadow-2xl border border-white/40 max-w-4xl mx-auto text-left">
+        <form id="hero-filter-form" onsubmit="event.preventDefault(); applyHeroSearch();" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-center">
+          
+          <!-- Filter 1: Destination / Islands -->
+          <div class="relative bg-slate-50 hover:bg-slate-100/80 p-3 rounded-2xl border border-slate-200 transition">
+            <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Islands Covered</label>
+            <div class="flex items-center mt-1">
+              <i data-lucide="map-pin" class="w-4 h-4 text-teal-600 mr-2 shrink-0"></i>
+              <select id="hero-island-select" class="bg-transparent w-full text-slate-800 text-sm font-semibold focus:outline-none cursor-pointer">
+                <option value="all">All Islands (Best of Andaman)</option>
+                <option value="havelock">Havelock (Swaraj Dweep)</option>
+                <option value="neil">Neil Island (Shaheed Dweep)</option>
+                <option value="portblair">Port Blair & Cellular Jail</option>
+                <option value="baratang">Baratang Caves & Ross</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Filter 2: Duration -->
+          <div class="relative bg-slate-50 hover:bg-slate-100/80 p-3 rounded-2xl border border-slate-200 transition">
+            <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Duration</label>
+            <div class="flex items-center mt-1">
+              <i data-lucide="clock" class="w-4 h-4 text-teal-600 mr-2 shrink-0"></i>
+              <select id="hero-duration-select" class="bg-transparent w-full text-slate-800 text-sm font-semibold focus:outline-none cursor-pointer">
+                <option value="all">Any Duration</option>
+                <option value="short">4 Days / 3 Nights (Short)</option>
+                <option value="medium" selected>5 to 6 Days (Most Popular)</option>
+                <option value="long">7 to 8+ Days (Complete)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Filter 3: Travel Theme -->
+          <div class="relative bg-slate-50 hover:bg-slate-100/80 p-3 rounded-2xl border border-slate-200 transition">
+            <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Travel Style</label>
+            <div class="flex items-center mt-1">
+              <i data-lucide="heart" class="w-4 h-4 text-teal-600 mr-2 shrink-0"></i>
+              <select id="hero-style-select" class="bg-transparent w-full text-slate-800 text-sm font-semibold focus:outline-none cursor-pointer">
+                <option value="all">All Styles</option>
+                <option value="honeymoon">Honeymoon & Romantic</option>
+                <option value="family">Family & Group Leisure</option>
+                <option value="adventure">Scuba & Adventure</option>
+                <option value="luxury">Luxury Beachfront Resorts</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Search CTA -->
+          <div>
+            <button type="submit" class="w-full h-full min-h-[52px] bg-gradient-to-r from-teal-600 via-teal-500 to-lagoon text-white font-bold rounded-2xl hover:opacity-95 transition-all shadow-lg shadow-teal-500/25 flex items-center justify-center gap-2 group">
+              <i data-lucide="search" class="w-5 h-5 group-hover:scale-110 transition"></i>
+              <span>Find Packages</span>
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS / COUNTER STRIP -->
+  <section class="bg-white border-b border-slate-200 py-8 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-3">
+        <div class="font-serif text-3xl sm:text-4xl font-bold text-abyss-900">12,500+</div>
+        <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">Delighted Island Guests</p>
+      </div>
+      <div class="p-3 border-l border-slate-100">
+        <div class="font-serif text-3xl sm:text-4xl font-bold text-teal-600">100%</div>
+        <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">Private AC Transfers & Ferries</p>
+      </div>
+      <div class="p-3 border-l border-slate-100">
+        <div class="font-serif text-3xl sm:text-4xl font-bold text-amber-500">4.9 ★</div>
+        <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">Top Rated Tour Operator</p>
+      </div>
+      <div class="p-3 border-l border-slate-100">
+        <div class="font-serif text-3xl sm:text-4xl font-bold text-abyss-900">24 / 7</div>
+        <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">Local Port Blair Concierge</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN PACKAGES SECTION (Replacing traditional table with modern dynamic cards) -->
+  <section id="packages" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    
+    <!-- Section Header -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <div class="inline-flex items-center gap-2 text-teal-600 font-bold text-xs uppercase tracking-widest mb-2">
+          <i data-lucide="compass" class="w-4 h-4"></i> Handcrafted Andaman Itineraries
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-abyss-900">
+          Featured Andaman Tour Packages
+        </h2>
+        <p class="text-slate-500 mt-2 text-base max-w-xl">
+          Complete with high-speed catamaran ferry tickets, handpicked 4-star & luxury beachfront stays, private sightseeing, and zero surprise fees.
+        </p>
+      </div>
+
+      <!-- Quick Category Pills -->
+      <div class="mt-6 md:mt-0 flex flex-wrap gap-2" id="filter-pills">
+        <button class="filter-pill active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition" data-filter="all">All Packages</button>
+        <button class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition" data-filter="honeymoon">Honeymoon Specials</button>
+        <button class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition" data-filter="family">Family Vacations</button>
+        <button class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition" data-filter="adventure">Adventure & Scuba</button>
+        <button class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition" data-filter="luxury">Luxury Escapes</button>
+      </div>
+    </div>
+
+    <!-- Active Filter Counter & Live Search -->
+    <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 mb-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3 w-full sm:w-auto">
+        <span class="text-xs font-semibold text-slate-500" id="package-count-text">Showing 6 Curated Packages</span>
+      </div>
+      <div class="relative w-full sm:w-72">
+        <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+        <input 
+          type="text" 
+          id="package-keyword-search" 
+          placeholder="Search (e.g. Scuba, Havelock, Neil)..."
+          class="w-full pl-9 pr-4 py-2 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-teal-500 focus:bg-white"
+        />
+      </div>
+    </div>
+
+    <!-- PACKAGES GRID CONTAINER -->
+    <div id="packages-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Cards will be populated by JavaScript for high interactivity -->
+    </div>
+
+    <!-- Fallback / Empty State -->
+    <div id="no-results-msg" class="hidden text-center py-16 bg-white rounded-3xl border border-dashed border-slate-300">
+      <i data-lucide="compass" class="w-12 h-12 text-slate-400 mx-auto mb-3"></i>
+      <h3 class="text-lg font-bold text-slate-700">No matching packages found</h3>
+      <p class="text-sm text-slate-500 mt-1">Try resetting your filters or search keywords.</p>
+      <button onclick="resetFilters()" class="mt-4 px-4 py-2 bg-teal-600 text-white text-xs font-semibold rounded-xl">
+        Reset All Filters
+      </button>
+    </div>
+
+  </section>
+
+  <!-- ISLAND HIGHLIGHTS VISUAL GUIDE (DIFFERENTIATOR FROM AKSHAR) -->
+  <section id="island-guide" class="py-20 bg-gradient-to-b from-white to-slate-100 border-t border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-teal-600 font-bold text-xs uppercase tracking-widest">Explore The Archipelago</span>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-abyss-900 mt-2">
+          Major Islands of Andaman & Nicobar
+        </h2>
+        <p class="text-slate-600 mt-3 text-base">
+          From the historical landmarks of Port Blair to Asia’s best rated Radhanagar beach on Havelock and the tranquil coral lagoons of Neil Island.
+        </p>
+      </div>
+
+      <!-- Island Interactive Showcase Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Island 1: Havelock -->
+        <div class="group relative rounded-3xl overflow-hidden bg-abyss-900 shadow-xl border border-white/10 hover:-translate-y-1.5 transition-all duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=900&auto=format&fit=crop" alt="Havelock Island Scuba Diving" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-abyss-900 via-abyss-900/30 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-teal-500/90 backdrop-blur-md text-white font-bold text-xs px-3 py-1 rounded-full">
+              Swaraj Dweep (Havelock)
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white font-serif">Havelock Island</h3>
+            <p class="text-slate-300 text-xs mt-2 leading-relaxed">
+              Home to Radhanagar Beach (Time Magazine's Best Beach in Asia), Elephant Beach for vibrant corals & water sports, and Kalapathar Beach for quiet sunrises.
+            </p>
+            <div class="mt-4 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-teal-300">
+              <span class="flex items-center gap-1"><i data-lucide="waves" class="w-3.5 h-3.5"></i> Scuba & Snorkel</span>
+              <span class="flex items-center gap-1"><i data-lucide="ship" class="w-3.5 h-3.5"></i> 90 min Catamaran</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Island 2: Neil Island -->
+        <div class="group relative rounded-3xl overflow-hidden bg-abyss-900 shadow-xl border border-white/10 hover:-translate-y-1.5 transition-all duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=900&auto=format&fit=crop" alt="Neil Island Natural Bridge" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-abyss-900 via-abyss-900/30 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-teal-500/90 backdrop-blur-md text-white font-bold text-xs px-3 py-1 rounded-full">
+              Shaheed Dweep (Neil)
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white font-serif">Neil Island</h3>
+            <p class="text-slate-300 text-xs mt-2 leading-relaxed">
+              The vegetable bowl of Andaman. Famous for relaxed rustic charm, the photogenic Natural Living Coral Rock Bridge, Lakshmanpur Sunset Beach, and Bharatpur's water activities.
+            </p>
+            <div class="mt-4 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-teal-300">
+              <span class="flex items-center gap-1"><i data-lucide="camera" class="w-3.5 h-3.5"></i> Coral Rock Bridge</span>
+              <span class="flex items-center gap-1"><i data-lucide="sun" class="w-3.5 h-3.5"></i> Sunset Vistas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Island 3: Port Blair -->
+        <div class="group relative rounded-3xl overflow-hidden bg-abyss-900 shadow-xl border border-white/10 hover:-translate-y-1.5 transition-all duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=900&auto=format&fit=crop" alt="Cellular Jail Port Blair" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-abyss-900 via-abyss-900/30 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-teal-500/90 backdrop-blur-md text-white font-bold text-xs px-3 py-1 rounded-full">
+              Port Blair (Capital)
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white font-serif">Port Blair</h3>
+            <p class="text-slate-300 text-xs mt-2 leading-relaxed">
+              Gateway to Andaman. Experience the legendary Cellular Jail national memorial & light-and-sound show, Corbyn's Cove beach, historic Ross Island, and Chidiya Tapu sunset point.
+            </p>
+            <div class="mt-4 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-teal-300">
+              <span class="flex items-center gap-1"><i data-lucide="landmark" class="w-3.5 h-3.5"></i> Cellular Jail</span>
+              <span class="flex items-center gap-1"><i data-lucide="plane" class="w-3.5 h-3.5"></i> Airport Gateway</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE TRIP COST CALCULATOR (UNIQUE FEATURE) -->
+  <section id="calculator" class="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+    <div class="bg-gradient-to-br from-abyss-900 via-abyss-800 to-teal-950 rounded-3xl p-6 sm:p-10 text-white shadow-2xl border border-teal-500/20 relative overflow-hidden">
+      
+      <!-- Subtle glow bg -->
+      <div class="absolute top-0 right-0 w-80 h-80 bg-teal-400/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="bg-teal-400/20 text-teal-300 text-xs font-bold uppercase tracking-wider px-3.5 py-1 rounded-full">
+          Instant Estimation Tool
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-3">
+          Estimate Your Andaman Trip Cost
+        </h2>
+        <p class="text-slate-300 text-sm mt-2">
+          Calculate instant approximate pricing based on duration, traveler count, hotel tier, and optional adventures.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left: Calculator Inputs -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Nights -->
+          <div>
+            <div class="flex justify-between text-xs font-semibold text-slate-300 mb-2">
+              <span>Trip Duration (Nights)</span>
+              <span class="text-teal-400 font-bold" id="calc-nights-val">5 Nights / 6 Days</span>
+            </div>
+            <input type="range" id="calc-nights" min="3" max="8" value="5" step="1" class="w-full accent-teal-400 cursor-pointer" oninput="updateTripCalculator()">
+            <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+              <span>3 Nights</span>
+              <span>5 Nights</span>
+              <span>8 Nights</span>
+            </div>
+          </div>
+
+          <!-- Travelers -->
+          <div>
+            <div class="flex justify-between text-xs font-semibold text-slate-300 mb-2">
+              <span>Number of Travelers</span>
+              <span class="text-teal-400 font-bold" id="calc-travelers-val">2 Persons</span>
+            </div>
+            <input type="range" id="calc-travelers" min="1" max="10" value="2" step="1" class="w-full accent-teal-400 cursor-pointer" oninput="updateTripCalculator()">
+            <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+              <span>1 Solo</span>
+              <span>2 Couple</span>
+              <span>4 Family</span>
+              <span>10+ Group</span>
+            </div>
+          </div>
+
+          <!-- Hotel Tier -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2">Accommodation Preference</label>
+            <div class="grid grid-cols-3 gap-2 text-xs">
+              <label class="cursor-pointer border border-white/20 p-2.5 rounded-xl text-center hover:border-teal-400 transition hotel-tier-label bg-white/5 has-[:checked]:bg-teal-500/20 has-[:checked]:border-teal-400">
+                <input type="radio" name="calc-hotel" value="standard" class="hidden" onchange="updateTripCalculator()">
+                <div class="font-bold">Comfort (3★)</div>
+                <div class="text-[10px] text-slate-400 mt-0.5">Budget Friendly</div>
+              </label>
+              <label class="cursor-pointer border border-teal-400 p-2.5 rounded-xl text-center transition hotel-tier-label bg-teal-500/20 has-[:checked]:bg-teal-500/20 has-[:checked]:border-teal-400">
+                <input type="radio" name="calc-hotel" value="deluxe" checked class="hidden" onchange="updateTripCalculator()">
+                <div class="font-bold text-teal-300">Deluxe (4★)</div>
+                <div class="text-[10px] text-slate-300 mt-0.5">Most Chosen</div>
+              </label>
+              <label class="cursor-pointer border border-white/20 p-2.5 rounded-xl text-center hover:border-teal-400 transition hotel-tier-label bg-white/5 has-[:checked]:bg-teal-500/20 has-[:checked]:border-teal-400">
+                <input type="radio" name="calc-hotel" value="luxury" class="hidden" onchange="updateTripCalculator()">
+                <div class="font-bold">Luxury (5★ Villa)</div>
+                <div class="text-[10px] text-slate-400 mt-0.5">Beachfront Resort</div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Add-ons -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2">Optional Add-ons</label>
+            <div class="grid grid-cols-2 gap-3 text-xs">
+              <label class="flex items-center gap-2 bg-white/5 p-2.5 rounded-xl border border-white/10 cursor-pointer hover:bg-white/10 transition">
+                <input type="checkbox" id="addon-scuba" class="accent-teal-500" onchange="updateTripCalculator()">
+                <span>Scuba Diving (with HD Photos)</span>
+              </label>
+              <label class="flex items-center gap-2 bg-white/5 p-2.5 rounded-xl border border-white/10 cursor-pointer hover:bg-white/10 transition">
+                <input type="checkbox" id="addon-dinner" class="accent-teal-500" onchange="updateTripCalculator()">
+                <span>Candlelight Beach Dinner</span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Calculation Result Card -->
+        <div class="lg:col-span-5 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 text-center">
+          <div class="text-xs uppercase tracking-wider text-teal-300 font-bold">Estimated Cost (Per Person)</div>
+          
+          <div class="font-serif text-4xl sm:text-5xl font-bold text-white mt-2 text-lagoon" id="calc-total-per-person">
+            ₹24,500
+          </div>
+          <div class="text-xs text-slate-400 mt-1" id="calc-grand-total">
+            Total for 2 Travelers: ₹49,000 (Incl. Taxes & Ferries)
+          </div>
+
+          <div class="my-6 border-t border-white/10 pt-4 space-y-2 text-left text-xs text-slate-300">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-teal-400"></i>
+              <span>High-speed AC Catamaran (Nautika / Makruzz)</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-teal-400"></i>
+              <span>Private AC Cab for all port & beach transfers</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-teal-400"></i>
+              <span>Daily Breakfast & Cellular Jail entry tickets</span>
+            </div>
+          </div>
+
+          <button onclick="requestQuoteFromCalc()" class="w-full py-3.5 bg-gradient-to-r from-teal-500 to-lagoon text-abyss-950 font-bold rounded-xl text-sm hover:brightness-110 transition shadow-lg shadow-teal-500/30 flex items-center justify-center gap-2">
+            <i data-lucide="file-text" class="w-4 h-4"></i> Lock This Quote / Customise
+          </button>
+          
+          <p class="text-[10px] text-slate-400 mt-2">
+            *Final prices may vary based on peak festive travel dates.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WATER SPORTS & ADVENTURES -->
+  <section id="activities" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-teal-600 font-bold text-xs uppercase tracking-widest">Unforgettable Encounters</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-abyss-900 mt-2">
+          Top Andaman Ocean Adventures
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          All water sports are guided by PADI-certified dive masters with international safety gear and high-definition underwater photography included.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200 group">
+          <div class="h-44 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?q=80&w=600&auto=format&fit=crop" alt="Scuba diving Havelock" class="w-full h-full object-cover group-hover:scale-105 transition">
+            <span class="absolute bottom-2 left-2 bg-abyss-900/80 backdrop-blur-md text-white text-[11px] font-semibold px-2 py-0.5 rounded">Havelock & Neil</span>
+          </div>
+          <div class="p-4">
+            <h4 class="font-bold text-slate-800 text-sm">PADI Scuba Diving</h4>
+            <p class="text-xs text-slate-500 mt-1">Explore Nemo Reef & exotic marine life underwater.</p>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="font-bold text-teal-600">From ₹3,500</span>
+              <span class="text-slate-400">45 Mins</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200 group">
+          <div class="h-44 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop" alt="Sea Kart Andaman" class="w-full h-full object-cover group-hover:scale-105 transition">
+            <span class="absolute bottom-2 left-2 bg-abyss-900/80 backdrop-blur-md text-white text-[11px] font-semibold px-2 py-0.5 rounded">Port Blair</span>
+          </div>
+          <div class="p-4">
+            <h4 class="font-bold text-slate-800 text-sm">Self-Drive Sea Kart</h4>
+            <p class="text-xs text-slate-500 mt-1">India’s only sea kart experience in Corbyn's Cove.</p>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="font-bold text-teal-600">From ₹3,200</span>
+              <span class="text-slate-400">30 Mins</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200 group">
+          <div class="h-44 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=600&auto=format&fit=crop" alt="Underwater Sea Walk" class="w-full h-full object-cover group-hover:scale-105 transition">
+            <span class="absolute bottom-2 left-2 bg-abyss-900/80 backdrop-blur-md text-white text-[11px] font-semibold px-2 py-0.5 rounded">Elephant Beach</span>
+          </div>
+          <div class="p-4">
+            <h4 class="font-bold text-slate-800 text-sm">Underwater Sea Walk</h4>
+            <p class="text-xs text-slate-500 mt-1">Walk naturally on sea floor without swimming skills.</p>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="font-bold text-teal-600">From ₹3,800</span>
+              <span class="text-slate-400">No Swim Needed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200 group">
+          <div class="h-44 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600&auto=format&fit=crop" alt="Night Kayaking" class="w-full h-full object-cover group-hover:scale-105 transition">
+            <span class="absolute bottom-2 left-2 bg-abyss-900/80 backdrop-blur-md text-white text-[11px] font-semibold px-2 py-0.5 rounded">Havelock Mangroves</span>
+          </div>
+          <div class="p-4">
+            <h4 class="font-bold text-slate-800 text-sm">Bioluminescent Kayaking</h4>
+            <p class="text-xs text-slate-500 mt-1">Paddle through glowing waters under the starry night.</p>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="font-bold text-teal-600">From ₹2,800</span>
+              <span class="text-slate-400">Night Tour</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE AZURE ANDAMAN (Comparison vs Traditional Agents) -->
+  <section id="why-us" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-teal-600 font-bold text-xs uppercase tracking-widest">The Azure Advantage</span>
+      <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-abyss-900 mt-2">
+        Why Island Travelers Choose Us
+      </h2>
+      <p class="text-slate-600 mt-3 text-base">
+        Unlike generic mass-market travel portals, we are based directly in Port Blair with dedicated on-ground transport and confirmed cruise seats.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+        <div class="w-12 h-12 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center mb-6">
+          <i data-lucide="ferry" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-lg font-bold text-slate-800">Confirmed Premium Ferries</h3>
+        <p class="text-slate-500 text-sm mt-2 leading-relaxed">
+          We only book premium private catamarans like <strong>Nautika, Makruzz & Green Ocean</strong> so you travel with plush AC seating, panoramic windows, and zero delays.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+        <div class="w-12 h-12 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center mb-6">
+          <i data-lucide="car" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-lg font-bold text-slate-800">100% Private Transfers</h3>
+        <p class="text-slate-500 text-sm mt-2 leading-relaxed">
+          No waiting in crowded shared buses. Every transfer from airport to jetty, beach, and hotel is in your own dedicated, air-conditioned private vehicle with polite drivers.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+        <div class="w-12 h-12 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center mb-6">
+          <i data-lucide="hotel" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-lg font-bold text-slate-800">Verified Beachfront Resorts</h3>
+        <p class="text-slate-500 text-sm mt-2 leading-relaxed">
+          Every resort in our packages is personally inspected. Enjoy guaranteed sea-facing cottages, private beach access, swimming pools, and verified hygiene standards.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CUSTOMER REVIEWS / TESTIMONIALS -->
+  <section class="py-20 bg-abyss-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-12">
+        <div>
+          <span class="text-teal-400 font-bold text-xs uppercase tracking-widest">Real Guest Stories</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">
+            Memories Made Across The Emerald Isles
+          </h2>
+        </div>
+        <div class="mt-4 md:mt-0 flex items-center gap-2">
+          <span class="text-amber-400 font-bold text-xl">4.9 / 5.0</span>
+          <div class="flex text-amber-400">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          </div>
+          <span class="text-xs text-slate-400 ml-1">(2,400+ Verified Reviews)</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-300 text-sm italic leading-relaxed">
+              "We booked the 6D/5N Honeymoon package. Everything from the private flower-bed decoration in Havelock resort to the sunset candlelit dinner on the beach was surreal! Nautika ferry tickets were delivered on WhatsApp without any hassle."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-300 flex items-center justify-center font-bold">
+              RP
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Rohit & Priya Patel</div>
+              <div class="text-xs text-slate-400">Ahmedabad, Gujarat • Travelled Nov 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-300 text-sm italic leading-relaxed">
+              "Traveled with our parents and kids for a 7-day family tour. The vehicle drivers were extremely courteous, punctual, and safe. The Cellular Jail light & sound show arrangements were smooth. Best travel operator for Andaman!"
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-300 flex items-center justify-center font-bold">
+              AK
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Anand Kulkarni & Family</div>
+              <div class="text-xs text-slate-400">Mumbai • Travelled Jan 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-300 text-sm italic leading-relaxed">
+              "Did deep scuba at Elephant Beach and Nemo reef. Their local coordinator in Havelock was on standby round the clock. Truly transparent pricing, no hidden costs. Highly recommend Azure Andaman!"
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-300 flex items-center justify-center font-bold">
+              SN
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Shreya Nair & Friends</div>
+              <div class="text-xs text-slate-400">Bengaluru • Travelled Dec 2025</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQS ACCORDION -->
+  <section id="faq" class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-teal-600 font-bold text-xs uppercase tracking-widest">Clear Answers</span>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-abyss-900 mt-2">
+        Frequently Asked Questions
+      </h2>
+      <p class="text-slate-500 text-sm mt-2">
+        Everything you need to know before visiting Andaman and Nicobar Islands.
+      </p>
+    </div>
+
+    <div class="space-y-4" id="faq-container">
+      
+      <!-- FAQ 1 -->
+      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm transition">
+        <button class="w-full px-6 py-4 text-left font-bold text-slate-800 flex items-center justify-between gap-4 text-sm sm:text-base focus:outline-none" onclick="toggleFaq(this)">
+          <span>What is the best time to visit the Andaman Islands?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-teal-600 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-xs sm:text-sm text-slate-600 leading-relaxed">
+          <div class="pb-4">
+            The ideal time to visit Andaman is between <strong>October and May</strong> when the weather is pleasant, the sea is calm, and underwater visibility for scuba diving and snorkeling is at its peak. Water sports remain open and inter-island ferry services operate smoothly.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm transition">
+        <button class="w-full px-6 py-4 text-left font-bold text-slate-800 flex items-center justify-between gap-4 text-sm sm:text-base focus:outline-none" onclick="toggleFaq(this)">
+          <span>Do Indian or Foreign tourists require a passport or permit?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-teal-600 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-xs sm:text-sm text-slate-600 leading-relaxed">
+          <div class="pb-4">
+            Indian citizens do not require a passport or special permit to visit Port Blair, Havelock, or Neil Island; a standard government ID (Aadhaar / Voter ID / Passport) is sufficient. Foreign nationals require a valid Indian Visa. Restricted Area Permits (RAP) are no longer required for 29 inhabited islands for foreigners.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm transition">
+        <button class="w-full px-6 py-4 text-left font-bold text-slate-800 flex items-center justify-between gap-4 text-sm sm:text-base focus:outline-none" onclick="toggleFaq(this)">
+          <span>How are inter-island transfers handled (Havelock & Neil)?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-teal-600 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-xs sm:text-sm text-slate-600 leading-relaxed">
+          <div class="pb-4">
+            All our tour packages include pre-booked high-speed private AC luxury catamarans (Nautika, Makruzz, or Green Ocean). Our team handles your jetty check-in, seat allocation, and luggage assistance seamlessly.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm transition">
+        <button class="w-full px-6 py-4 text-left font-bold text-slate-800 flex items-center justify-between gap-4 text-sm sm:text-base focus:outline-none" onclick="toggleFaq(this)">
+          <span>Can packages be customized for honeymoons or families?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-teal-600 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-xs sm:text-sm text-slate-600 leading-relaxed">
+          <div class="pb-4">
+            Yes, 100%! You can tailor the number of days, choose specific beachfront villas, add romantic candlelit beach dinners, flower bed setups, or child-friendly water activities. Simply use our custom inquiry form or chat with our island specialist.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUICK INQUIRY / CUSTOM QUOTE MODAL (Overlay) -->
+  <div id="quote-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-abyss-950/70 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-200 transform scale-95 transition-transform duration-300" id="quote-modal-box">
+      
+      <button onclick="closeCustomQuoteModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1.5 rounded-full hover:bg-slate-100 transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center">
+          <i data-lucide="send" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-slate-900 font-serif">Get Your Custom Quote</h3>
+          <p class="text-xs text-slate-500">Fast response within 30 minutes with day-wise plan & price</p>
+        </div>
+      </div>
+
+      <form id="quote-form" onsubmit="handleQuoteSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Your Full Name *</label>
+          <input type="text" id="quote-name" required placeholder="e.g. Rahul Sharma" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-teal-500">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">WhatsApp Phone *</label>
+            <input type="tel" id="quote-phone" required placeholder="+91 9876543210" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-teal-500">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+            <input type="email" id="quote-email" placeholder="rahul@example.com" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-teal-500">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Travel Month</label>
+            <select id="quote-month" class="w-full px-3 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-teal-500 cursor-pointer">
+              <option value="November 2026">November 2026</option>
+              <option value="December 2026">December 2026</option>
+              <option value="January 2027">January 2027</option>
+              <option value="February 2027">February 2027</option>
+              <option value="March 2027">March 2027</option>
+              <option value="April 2027">April 2027</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">No. of Guests</label>
+            <select id="quote-travelers" class="w-full px-3 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-teal-500 cursor-pointer">
+              <option value="2 Adults (Couple)">2 Adults (Couple)</option>
+              <option value="Family (2 Adults + 1 Child)">Family (2 Adults + 1 Child)</option>
+              <option value="Family (2 Adults + 2 Kids)">Family (2 Adults + 2 Kids)</option>
+              <option value="Group (4-8 Adults)">Group (4-8 Adults)</option>
+              <option value="Solo Traveler">Solo Traveler</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Package / Specific Requests</label>
+          <textarea id="quote-notes" rows="2" placeholder="e.g. Want luxury beach resort in Havelock, scuba diving and candlelight dinner..." class="w-full px-3.5 py-2 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-teal-500"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-teal-600 to-teal-500 text-white font-bold rounded-xl text-sm shadow-lg shadow-teal-500/25 hover:from-teal-700 hover:to-teal-600 transition flex items-center justify-center gap-2">
+          <i data-lucide="check-circle" class="w-4 h-4"></i> Request Instant Itinerary & Pricing
+        </button>
+
+        <p class="text-[11px] text-center text-slate-400">
+          🔒 Zero spam policy. We will share details on WhatsApp and email only.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ITINERARY DETAILS MODAL (FULL DAY-WISE BREAKDOWN) -->
+  <div id="itinerary-modal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-abyss-950/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
+    <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl relative border border-slate-200 transform scale-95 transition-transform duration-300 overflow-hidden" id="itinerary-modal-box">
+      
+      <!-- Modal Top Header -->
+      <div class="p-6 bg-abyss-900 text-white flex items-center justify-between relative border-b border-white/10">
+        <div>
+          <span class="text-teal-400 text-xs font-bold uppercase tracking-wider" id="modal-pkg-duration">5 Nights / 6 Days</span>
+          <h3 class="text-xl sm:text-2xl font-bold font-serif text-white mt-1" id="modal-pkg-title">Enchanting Andaman Escape</h3>
+          <p class="text-xs text-slate-300 mt-0.5" id="modal-pkg-route">Port Blair • Havelock (Swaraj Dweep) • Neil Island</p>
+        </div>
+        <button onclick="closeItineraryModal()" class="text-slate-400 hover:text-white p-2 rounded-full hover:bg-white/10 transition">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body (Scrollable) -->
+      <div class="p-6 overflow-y-auto space-y-6 flex-1 text-slate-700">
+        
+        <!-- Summary Cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-slate-50 p-3.5 rounded-2xl border border-slate-200 text-xs text-center">
+          <div>
+            <span class="text-slate-400 block">Starting Price</span>
+            <span class="font-bold text-teal-600 text-sm" id="modal-pkg-price">₹22,999</span>
+          </div>
+          <div>
+            <span class="text-slate-400 block">Stay Category</span>
+            <span class="font-bold text-slate-800 text-sm">4★ Beachfront</span>
+          </div>
+          <div>
+            <span class="text-slate-400 block">Ferry Cruise</span>
+            <span class="font-bold text-slate-800 text-sm">Nautika / Makruzz</span>
+          </div>
+          <div>
+            <span class="text-slate-400 block">Transfers</span>
+            <span class="font-bold text-slate-800 text-sm">Private AC Cabs</span>
+          </div>
+        </div>
+
+        <!-- Day-wise Itinerary Timeline -->
+        <div>
+          <h4 class="font-serif text-lg font-bold text-abyss-900 mb-4 flex items-center gap-2">
+            <i data-lucide="calendar" class="w-5 h-5 text-teal-600"></i> Day-by-Day Experience
+          </h4>
+          <div class="space-y-4 relative border-l-2 border-teal-200 ml-3 pl-5" id="modal-days-container">
+            <!-- Timeline items injected dynamically via JS -->
+          </div>
+        </div>
+
+        <!-- Inclusions & Exclusions -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-200">
+          <div class="bg-teal-50/60 p-4 rounded-2xl border border-teal-100">
+            <h5 class="text-xs font-bold uppercase tracking-wider text-teal-800 mb-2 flex items-center gap-1.5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-600"></i> What's Included
+            </h5>
+            <ul class="text-xs text-slate-600 space-y-1.5" id="modal-inclusions">
+              <li>• AC Accommodation in selected 4-Star resorts</li>
+              <li>• Daily buffet breakfast at all hotels</li>
+              <li>• High-Speed Catamaran ferry (Port Blair ⇄ Havelock ⇄ Neil)</li>
+              <li>• All transfers in private AC vehicle</li>
+              <li>• Cellular Jail sound & light show tickets</li>
+              <li>• 24x7 local on-ground assistance in Port Blair</li>
+            </ul>
+          </div>
+
+          <div class="bg-rose-50/60 p-4 rounded-2xl border border-rose-100">
+            <h5 class="text-xs font-bold uppercase tracking-wider text-rose-800 mb-2 flex items-center gap-1.5">
+              <i data-lucide="x-circle" class="w-4 h-4 text-rose-500"></i> What's Excluded
+            </h5>
+            <ul class="text-xs text-slate-600 space-y-1.5">
+              <li>• Airfare to/from Port Blair (available on request)</li>
+              <li>• Lunch, dinner, and personal beverage expenses</li>
+              <li>• Optional water sports (Scuba, Jet Ski, Sea walk)</li>
+              <li>• Any item not mentioned in package inclusions</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div class="text-xs text-slate-500 text-center sm:text-left">
+          Free cancellation up to 15 days before departure • 100% Customized
+        </div>
+        <div class="flex items-center gap-3 w-full sm:w-auto">
+          <button onclick="closeItineraryModal()" class="w-1/2 sm:w-auto px-4 py-2.5 text-xs font-bold text-slate-600 hover:bg-slate-200 rounded-xl transition">
+            Close
+          </button>
+          <button onclick="bookFromModal()" class="w-1/2 sm:w-auto px-6 py-2.5 bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold rounded-xl shadow-md shadow-teal-600/30 transition flex items-center justify-center gap-1.5">
+            <i data-lucide="check" class="w-4 h-4"></i> Book This Package
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP & CONTACT BUTTONS -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+    <!-- WhatsApp Direct Trigger -->
+    <a 
+      href="https://wa.me/919876543210?text=Hi%20Azure%20Andaman,%20I%20am%20interested%20in%20customizing%20an%20Andaman%20Tour%20Package." 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="w-14 h-14 bg-emerald-500 text-white rounded-full flex items-center justify-center shadow-xl hover:bg-emerald-600 transition-all hover:scale-110 group relative"
+      aria-label="Chat on WhatsApp"
+    >
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+      <span class="absolute right-16 bg-slate-900 text-white text-xs font-semibold py-1.5 px-3 rounded-lg shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition pointer-events-none">
+        Chat with Island Expert
+      </span>
+    </a>
+
+    <!-- Quick Call Button for Mobile -->
+    <a 
+      href="tel:+919876543210" 
+      class="w-12 h-12 bg-teal-600 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-teal-700 transition md:hidden"
+      aria-label="Call Now"
+    >
+      <i data-lucide="phone" class="w-5 h-5"></i>
+    </a>
+  </div>
+
+  <!-- TOAST NOTIFICATION POPUP -->
+  <div id="toast" class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 bg-abyss-900 text-white px-5 py-3 rounded-2xl shadow-2xl border border-teal-500/30 text-xs sm:text-sm font-semibold flex items-center gap-2 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <i data-lucide="check-circle" class="w-4 h-4 text-teal-400"></i>
+    <span id="toast-msg">Thank you! Our island team will connect shortly.</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-abyss-950 text-slate-400 pt-16 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-teal-600 flex items-center justify-center text-white">
+              <i data-lucide="palmtree" class="w-6 h-6"></i>
+            </div>
+            <span class="font-serif text-2xl font-bold tracking-tight text-white">
+              Azure<span class="text-teal-400 font-sans">ANDAMAN</span>
+            </span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Specializing in premier bespoke holidays, honeymoon journeys, and corporate island retreats across Andaman & Nicobar. Authorized luxury catamaran & watersport affiliate.
+          </p>
+          <div class="flex items-center space-x-3 text-white pt-2">
+            <a href="#" class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center hover:bg-teal-600 transition"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center hover:bg-teal-600 transition"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center hover:bg-teal-600 transition"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Top Packages -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Popular Packages</h4>
+          <ul class="text-xs space-y-2 text-slate-400">
+            <li><a href="#packages" class="hover:text-teal-400 transition">5N/6D Island Romance</a></li>
+            <li><a href="#packages" class="hover:text-teal-400 transition">6N/7D Grand Archipelago</a></li>
+            <li><a href="#packages" class="hover:text-teal-400 transition">4N/5D Short Havelock Break</a></li>
+            <li><a href="#packages" class="hover:text-teal-400 transition">7N/8D Luxury Villa Retreat</a></li>
+            <li><a href="#packages" class="hover:text-teal-400 transition">Scuba & Adventure Special</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Islands -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Islands Covered</h4>
+          <ul class="text-xs space-y-2 text-slate-400">
+            <li><a href="#island-guide" class="hover:text-teal-400 transition">Havelock (Swaraj Dweep)</a></li>
+            <li><a href="#island-guide" class="hover:text-teal-400 transition">Neil Island (Shaheed Dweep)</a></li>
+            <li><a href="#island-guide" class="hover:text-teal-400 transition">Port Blair (Cellular Jail)</a></li>
+            <li><a href="#island-guide" class="hover:text-teal-400 transition">Baratang Limestone Caves</a></li>
+            <li><a href="#island-guide" class="hover:text-teal-400 transition">Ross & North Bay Islands</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Office -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Local Office</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            VIP Road, Near Phoenix Bay Jetty,<br>
+            Port Blair, Andaman & Nicobar Islands - 744101
+          </p>
+          <div class="pt-2 text-xs space-y-1">
+            <div class="text-teal-300 font-semibold">+91 98765 43210</div>
+            <div>support@azureandaman.com</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div>
+          © 2026 Azure Andaman Journeys Pvt. Ltd. All rights reserved.
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-400">Terms of Booking</a>
+          <a href="#" class="hover:text-slate-400">Ferry Cancellation Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
